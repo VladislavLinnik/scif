@@ -1,0 +1,23 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #fff;
+    font-family: 'Gilroy', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+.container {
+    max-width: 1170px;
+    width: 85%;
+    margin: 0 auto;
+}

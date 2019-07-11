@@ -1,0 +1,23 @@
+@import 'settings/mixin';
+@import 'settings/fonts';
+@import 'settings/common';
+
+
+
+
+
+
+
+.banner {
+
+    .container {
+        
+    }
+}
+
+.header {
+
+    &--banner {
+        width: 90%;
+    }
+}
