@@ -1,0 +1,8 @@
+.banner {
+    min-height: 700px;
+    background-size: cover;
+    
+    &--home {
+        background: #eee url('../img/banner.jpg') no-repeat;
+    }
+}

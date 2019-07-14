@@ -1,0 +1,58 @@
+.header {
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+
+    &__wrap {
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+
+    }
+
+    &__nav {
+
+        .menu {
+            display: flex;
+            align-items: center;
+
+            &__item {
+
+                &:not(:last-child) {
+                    margin-right: 30px;
+                }
+
+                &--button {
+                    font-family: 'Gilroy', sans-serif;
+                }
+
+                &.active {
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        height: 1px;
+                        width: 24px;
+                        position: absolute;
+                        bottom: -4px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background-color: #fff;
+                    }
+                }
+            }
+
+            &__link {
+                font-size: 12px;
+            }
+        }
+    }
+}
