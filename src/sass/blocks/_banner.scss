@@ -1,8 +1,73 @@
 .banner {
-    min-height: 700px;
-    background-size: cover;
+    // min-height: 700px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+
+    .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__info {
+        max-width: 555px;
+
+        .title {
+            font-size: 64px;
+            font-weight: bold;
+            line-height: normal;
+        }
+
+        .text {
+            margin-top: 35px;
+            font-size: 21px;
+            line-height: 1.5;
+        }
+    }
+
+    &__count {
+        text-align: center;
+
+        .title {
+            margin-bottom: 15px;
+            font-size: 16px;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .count {
+            display: flex;
+            align-items: center;
+
+            &__item {
+
+                &:not(:last-child) {
+                    margin-right: 40px;
+                }
+            }
+
+            &__number {
+                color: $grass;
+                font-size: 64px;
+                font-weight: bold;
+            }
+
+            &__text {
+                text-align: center;
+                color: #fff;
+                font-size: 16px;
+            }
+        }
+
+        .count__btn {
+            margin-top: 50px;
+        }
+    }
     
     &--home {
         background: #eee url('../img/banner.jpg') no-repeat;
+        background-size: cover;
     }
 }

@@ -1,0 +1,58 @@
+.future-events {
+    padding: 15vh 0;
+    background-color: #f9f9f9;
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+    }
+
+    .info {
+
+        .title {
+
+        }
+
+        .descr {
+
+        }
+
+        .btn {
+            color: #fff !important;
+        }
+    }
+
+    .event {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 7px;
+        box-shadow: $main-shadow;
+        overflow: hidden;
+
+        &__img {
+            max-width: 260px;
+
+            img {
+                max-width: 100%;
+                display: block;
+            }
+        }
+
+        &__text {
+            padding: 15px;
+
+            .title {
+
+            }
+
+            .descr {
+
+            }
+
+            .link {
+                
+            }
+        }
+    }
+}

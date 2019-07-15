@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
+    sassGlob = require('gulp-sass-glob'),
     concat = require('gulp-concat'),
     autoprefixer = require('gulp-autoprefixer');
 
@@ -8,6 +9,7 @@ gulp.task('styles',function(){
                 .pipe(autoprefixer({
                     browsers: ['> 0.1%']
                 }))
+                .pipe(sassGlob())
                 .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
                 .pipe(gulp.dest('./app/css/'))
 });

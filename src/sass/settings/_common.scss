@@ -17,7 +17,6 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 .wrap {
-    max-width: 1170px;
     width: 85%;
     margin: 0 auto;
 }
@@ -25,8 +24,12 @@ body {
 
 
 .btn {
-    padding: 7px 15px;
+    padding: 12px 20px;
+    display: inline-block;
     background-color: $azure;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
     border: none;
     border-radius: 7px;
     box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.1);
