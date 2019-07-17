@@ -5,11 +5,19 @@
     &__wrap {
         display: flex;
         align-items: center;
+
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
     }
 
     &__info {
         max-width: 525px;
         color: $dark;
+
+        @media (max-width: 992px) {
+            margin-bottom: 30px;
+        }
         
         .title {
             margin-bottom: 25px;

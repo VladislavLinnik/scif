@@ -1,0 +1,183 @@
+.contact {
+    padding: 8vh 0;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 720px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .info {
+        margin-right: 40px;
+        max-width: 360px;
+        flex: 1;
+        color: $dark;
+
+        @media (max-width: 720px) {
+            margin-right: 0;
+        }
+
+        &__title {
+            margin-bottom: 10px;
+            color: $dark;
+            font-size: 21px;
+            font-weight: bold;
+            line-height: 1.5;
+
+            @media (max-width: 720px) {
+                text-align: center;
+            }
+        }
+
+        &__descr {
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .communication {
+            margin-bottom: 35px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            &__item {
+                margin-bottom: 10px;
+                width: 50%;
+            }
+
+            &__link {
+                padding-left: 25px;
+                position: relative;
+                color: $dark;
+                font-size: 16px;
+                line-height: 1.5;
+
+                &--tel {
+                    
+                    &::before {
+                        content: '';
+                        height: 14px;
+                        width: 20px;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background: url('../img/icons/mail.png') no-repeat;
+                    }
+                }
+
+                &--email {
+                    
+                    &::before {
+                        content: '';
+                        height: 14px;
+                        width: 20px;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background: url('../img/icons/mail.png') no-repeat;
+                    }
+                }
+            }
+        }
+
+        .social {
+
+            &__title {
+                margin-bottom: 15px;
+                font-size: 21px;
+
+                @media (max-width: 720px) {
+                    text-align: center;
+                }
+            }
+
+            &__list {
+                display: flex;
+                flex-wrap: wrap;
+
+                @media (max-width: 720px) {
+                    justify-content: center;
+                }
+            }
+
+            &__item {
+                border-radius: 50%;
+
+                &:not(:last-child) {
+                    margin-right: 18px;
+                }
+            }
+
+            &__link {
+                
+            }
+        }
+    }
+
+    .form {
+        margin: auto;
+        max-width: 360px;
+        flex: 1;
+        color: $dark;
+
+        @media (max-width: 720px) {
+            margin-bottom: 30px;
+        }
+
+        &-group {
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+
+            &--two {
+                
+                .input {
+                    width: 48% !important;
+                }
+            }
+        }
+
+        .input {
+            padding: 10px 22px;
+            width: 100%;
+            display: inline-block;
+            background-color: #fff;
+            border: 1px solid rgba($dark, .2);
+            border-radius: 7px;
+        }
+
+        .select {
+            padding: 10px 22px;
+            width: 100%;
+            display: inline-block;
+            background-color: #fff;
+            border: 1px solid rgba($dark, .2);
+            border-radius: 7px;
+
+            &:focus, &:active {
+                outline: none;
+            }
+        }
+
+        .textarea {
+            padding: 10px 22px;
+            min-height: 100px;
+            width: 100%;
+            display: inline-block;
+            background-color: #fff;
+            border: 1px solid rgba($dark, .2);
+            border-radius: 7px;
+            resize: vertical;
+        }
+
+        .btn {
+            width: 100%;
+        }
+    }
+}

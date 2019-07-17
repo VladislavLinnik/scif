@@ -1,0 +1,125 @@
+.last-news {
+    padding: 10vh 0;
+    background-color: #f9f9f9;
+
+    .grid {
+        display: grid;
+        grid-template-areas: 
+        "one two three"
+        "one four five";
+        grid-gap: 30px;
+
+        &__item {
+            padding: 35px 25px 40px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 12px;
+            box-shadow: $main-shadow;
+            overflow: hidden;
+
+            &--one {
+                padding: 0;
+                width: 500px;
+                grid-area: one;
+
+                .content {
+                    padding: 35px 30px 40px 30px;
+                }
+
+                .title {
+                    margin-bottom: 5px;
+                }
+
+                .date {
+                    margin-bottom: 0;
+                }
+            }
+
+            &--two {
+                grid-area: two;
+            }
+
+            &--three {
+                grid-area: three;
+            }
+
+            &--four {
+                grid-area: four;
+            }
+
+            &--five {
+                grid-area: five;
+            }
+
+            .img {
+                overflow: hidden;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .category {
+                margin-bottom: 16px;
+                padding: 8px;
+                width: 100px;
+                text-align: center;
+                background-color: $grass;
+                color: #fff;
+                font-size: 14px;
+                font-weight: 500;
+                border-radius: 7px;
+            }
+
+            .title {
+                margin-bottom: 18px;
+                height: 70px;
+                font-size: 21px;
+                font-weight: bold;
+                line-height: 1.5;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+
+            .descr {
+                margin-bottom: 18px;
+                height: 40px;
+                font-size: 14px;
+                line-height: 1.5;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+
+            .link {
+                width: 100px;
+                position: relative;
+                color: $azure;
+                font-size: 14px;
+                font-weight: 600;
+                text-decoration: underline;
+
+                &:after {
+                    content: '\2192';
+                    margin-left: 10%;
+                    position: absolute;
+                    left: 100%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+
+            .date {
+                margin-bottom: 12px;
+                color: rgba($dark, .7);
+                font-size: 14px;
+            }
+
+            .bottom {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+}

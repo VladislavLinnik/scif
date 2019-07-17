@@ -1,0 +1,49 @@
+.blog {
+    padding: 10vh 0;
+
+    &__wrap {
+        display: flex;
+    }
+
+    &__articles {
+
+        .article {
+
+            &__img {
+
+                img {
+
+                }
+            }
+
+            &__category {
+
+            }
+
+            &__title {
+
+            }
+
+            &__descr {
+
+            }
+
+            &__link {
+
+            }
+        }
+    }
+
+    .sidebar {
+        margin-left: 60px;
+        width: 290px;
+
+        &__subjects {
+
+        }
+
+        &__subscribe {
+
+        }
+    }
+}

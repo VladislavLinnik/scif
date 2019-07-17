@@ -1,5 +1,4 @@
 .banner {
-    // min-height: 700px;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -9,10 +8,19 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
     }
 
     &__info {
         max-width: 555px;
+
+        @media (max-width: 992px) {
+            margin-bottom: 30px;
+            text-align: center;
+        }
 
         .title {
             font-size: 64px;
@@ -24,6 +32,10 @@
             margin-top: 35px;
             font-size: 21px;
             line-height: 1.5;
+
+            @media (max-width: 992px) {
+                margin-top: 10px;
+            }
         }
     }
 
@@ -63,11 +75,25 @@
 
         .count__btn {
             margin-top: 50px;
+
+            @media (max-width: 992px) {
+                margin-top: 30px;
+            }
         }
     }
     
     &--home {
-        background: #eee url('../img/banner.jpg') no-repeat;
+        background: #eee url('../img/banner_home.jpg') no-repeat;
+        background-size: cover;
+    }
+
+    &--about {
+        background: #eee url('../img/banner_about.jpg') no-repeat;
+        background-size: cover;
+    }
+
+    &--blog {
+        background: #eee url('../img/banner_home.jpg') no-repeat;
         background-size: cover;
     }
 }

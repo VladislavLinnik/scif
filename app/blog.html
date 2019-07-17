@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- FOR ADAPTIVE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:500&display=swap&subset=cyrillic" rel="stylesheet">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JQUERY -->
+    <script src="js/jquery.3.3.1.min.js"></script>
+
+    <!-- SCRIPTS -->
+
+
+    <title>SCIF || Blog</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="wrap header__wrap">
+        <a href="#" class="header__logo">
+            <img src="./img/logo.svg" alt="">
+        </a>
+
+        <nav class="header__nav">
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></a></li>
+                <li class="menu__item"><a class="menu__link" href="about.html">О нас</a></a></li>
+                <li class="menu__item"><a class="menu__link" href="events.html">Мероприятия</a></a></li>
+                <li class="menu__item active"><a class="menu__link" href="blog.html">Новости</a></a></li>
+                <li class="menu__item"><a class="menu__link" href="contact.html">Контакты</a></a></li>
+                <li class="menu__item menu__item--langs">
+                    <select class="js-customSelect">
+                        <option value="">RU</option>
+                        <option value="./en/index.html">EN</option>
+                        <option value="./de/index.html">DE</option>
+                    </select>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__item--button btn">Войти</a>
+                </li>
+            </ul>
+            <div class="menu__toggle js-toggleMenu"><span></span></div>
+        </nav>
+    </div>
+</header>
+
+
+
+<section class="banner banner--blog">
+    <div class="wrap banner__wrap">
+        <div class="banner__info">
+            <h2 class="title">Новостной  Блог</h2>
+            <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<section class="blog">
+    <div class="wrap blog__wrap">
+        <div class="blog__articles">
+            <article class="article">
+                <div class="article__img">
+                    <img src="" alt="">
+                </div>
+                <div class="article__category">Химия</div>
+                <h2 class="article__title">Impact Of Extrinsic Motivation On Intrinsic Move to Move</h2>
+                <p class="article__descr">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+                <a href="#" class="article__link">Читать подробнее</a>
+            </article>
+        </div>
+        <aside class="sidebar">
+            <div class="sidebar__subjects"></div>
+            <div class="sidebar__subscribe"></div>
+        </aside>
+    </div>
+</section>
+
+
+
+<footer class="footer">
+    <div class="wrap footer__wrap">
+        <div class="footer__main">
+            <div class="column">
+                <a href="#" class="logo">
+                    <img class="logo__img" src="./img/logo_footer.svg" />
+                </a>
+            </div>
+            <div class="column">
+                <h3 class="column__title">Страницы</h3>
+                <ul class="column__list">
+                    <li class="column__item"><a href="index.html" class="column__link">Главная</a></li>
+                    <li class="column__item"><a href="about.html" class="column__link">О нас</a></li>
+                    <li class="column__item"><a href="events.html" class="column__link">Мероприятия</a></li>
+                    <li class="column__item"><a href="blog.html" class="column__link">Новости</a></li>
+                    <li class="column__item"><a href="contact.html" class="column__link">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3 class="column__title">Мы в соц сетях</h3>
+                <ul class="column__list">
+                    <li class="column__item"><a href="#" class="column__link">Facebook</a></li>
+                    <li class="column__item"><a href="#" class="column__link">Instagram</a></li>
+                    <li class="column__item"><a href="#" class="column__link">Twitter</a></li>
+                    <li class="column__item"><a href="#" class="column__link">Youtube</a></li>
+                    <li class="column__item"><a href="#" class="column__link">Linkedin</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3 class="column__title">Контакты</h3>
+                <ul class="column__list">
+                    <li class="column__item"><a href="mailto:info@form.com" class="column__link">info@form.com</a></li>
+                    <li class="column__item"><a href="tel:8825873025" class="column__link">882-587-3025</a></li>
+                    <li class="column__item"><a href="tel:8825873025" class="column__link">882-587-3025</a></li>
+                    <li class="column__item"><a href="tel:8825873025" class="column__link">882-587-3025</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3 class="column__title">Новости</h3>
+                <p class="column__descr">Получайте только интересные новости</p>
+                <form class="column__form">
+                    <input type="email" class="input" placeholder="Email">
+                    <button class="button">Подписаться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer__copy">
+        <div class="wrap">
+            <p class="copy__powered">Powered by DZH_Studio</p>
+            <p class="copy__reserved"><span>&copy;2019 - SCIF</span><span>All right reserved</span></p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/index.js"></script>
+</body>
+</html>

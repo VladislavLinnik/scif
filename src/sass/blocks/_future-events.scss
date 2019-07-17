@@ -5,19 +5,28 @@
     &__wrap {
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
 
     .info {
+        max-width: 430px;
+        color: $dark;
 
         .title {
-
+            margin-bottom: 28px;
+            font-size: 50px;
+            font-weight: bold;
+            line-height: 1.3;
         }
 
         .descr {
-
+            margin-bottom: 15px;
+            font-size: 16px;
+            line-height: 1.5;
         }
 
         .btn {
+            width: 220px;
             color: #fff !important;
         }
     }
@@ -40,18 +49,38 @@
         }
 
         &__text {
-            padding: 15px;
+            padding: 15px 45px 15px 15px;
+            max-width: 330px;
+            color: $dark;
 
             .title {
-
+                margin-bottom: 5px;
+                font-size: 21px;
+                font-weight: bold;
+                line-height: 1.5;
             }
 
             .descr {
-
+                margin-bottom: 18px;
+                font-size: 14px;
+                line-height: 1.5;
             }
 
             .link {
-                
+                position: relative;
+                color: $azure;
+                font-size: 14px;
+                font-weight: 600;
+                text-decoration: underline;
+
+                &:after {
+                    content: '\2192';
+                    margin-left: 10%;
+                    position: absolute;
+                    left: 100%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
             }
         }
     }

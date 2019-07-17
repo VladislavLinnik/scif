@@ -1,0 +1,98 @@
+.partners {
+    padding: 10vh;
+
+    .tabs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba($grass, .2);
+
+        &__item {
+            padding: 10px 10px 20px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        &.js-tabTitle {
+
+            .tabs__item {
+
+                img {
+                    filter: opacity(0.4);
+                }
+    
+                &.active{
+                    
+                    &::after {
+                        content: '';
+                        height: 5px;
+                        width: 100px;
+                        position: absolute;
+                        left: 50%;
+                        bottom: 0;
+                        transform: translateX(-50%);
+                        background-color: $grass;
+                    }
+
+                    img {
+                        filter: opacity(1);
+                    }
+                }
+            }
+        }
+    }
+
+    .tab-content {
+
+        &__item {
+            padding-top: 50px;
+            display: flex;
+            align-items: center;
+
+            .text {
+                margin-right: 130px;
+                height: 60px;
+                color: $dark;
+                font-size: 21px;
+                line-height: 1.67;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+
+            .link {
+                min-width: 220px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+
+        &.js-tabContent {
+
+            .tab-content__item {
+                display: none;
+            }
+        }
+    }
+
+    &--about {
+        background-color: #f9f9f9;
+
+        .tabs {
+            border-bottom: none;
+        }
+    }
+}
