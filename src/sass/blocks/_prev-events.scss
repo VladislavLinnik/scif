@@ -11,10 +11,16 @@
         "two four";
         grid-gap: 30px;
 
+        @media (max-width: 992px) {
+            grid-template-areas:
+                    "one"
+                    "three"
+                    "four"
+                    "two";
+        }
+
         &__item {
             border-radius: 7px;
-
-            
 
             &.event {
                 display: flex;

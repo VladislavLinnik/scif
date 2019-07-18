@@ -26,6 +26,7 @@
             align-items: center;
 
             @media (max-width: 992px) {
+                padding: 0 15px;
                 flex-direction: column-reverse;
             }
 
@@ -39,6 +40,10 @@
 
             &:first-child {
 
+                @media (max-width: 992px) {
+                    margin-left: -15px;
+                }
+
                 .item__circle {
 
                     @media (max-width: 992px) {
@@ -48,6 +53,10 @@
             }
 
             &:last-child {
+
+                @media (max-width: 992px) {
+                    margin-right: -15px;
+                }
 
                 .item__circle {
 
@@ -123,7 +132,13 @@
 
                 @media (max-width: 992px) {
                     margin-bottom: 10px;
+                    height: 100%;
                     text-align: center;
+                    font-size: 18px;
+                }
+
+                @media (max-width: 768px) {
+                    display: none;
                 }
             }
         }

@@ -1,5 +1,6 @@
 .contact {
     padding: 8vh 0;
+    color: $dark;
 
     .wrapper {
         display: flex;
@@ -14,7 +15,6 @@
         margin-right: 40px;
         max-width: 360px;
         flex: 1;
-        color: $dark;
 
         @media (max-width: 720px) {
             margin-right: 0;
@@ -91,6 +91,7 @@
             &__title {
                 margin-bottom: 15px;
                 font-size: 21px;
+                font-weight: bold;
 
                 @media (max-width: 720px) {
                     text-align: center;
@@ -124,7 +125,6 @@
         margin: auto;
         max-width: 360px;
         flex: 1;
-        color: $dark;
 
         @media (max-width: 720px) {
             margin-bottom: 30px;
@@ -178,6 +178,51 @@
 
         .btn {
             width: 100%;
+        }
+    }
+
+    &--page {
+        padding: 0;
+        width: 100%;
+        color: #fff;
+
+        .info {
+            max-width: 610px;
+
+            &__title {
+                margin-bottom: 35px;
+                font-size: 64px;
+                color: #fff;
+            }
+
+            &__descr {
+                font-size: 16px;
+            }
+
+            .communication {
+                justify-content: initial;
+
+                &__item {
+                    width: calc(50% - 50px);
+
+                    &:nth-child(2),
+                    &:nth-child(4) {
+                        margin-right: 50px;
+                    }
+                }
+
+                &__link {
+                    color: #fff;
+                }
+            }
+        }
+
+        .form {
+            margin: 0;
+            padding: 60px 45px 55px;
+            max-width: 450px;
+            background-color: #ffffff;
+            border: solid 1px #979797;
         }
     }
 }

@@ -9,6 +9,22 @@
         "one four five";
         grid-gap: 30px;
 
+        @media (max-width: 992px) {
+            grid-template-areas:
+                    "one one"
+                    "two three"
+                    "four five";
+        }
+
+        @media (max-width: 768px) {
+            grid-template-areas:
+                    "one"
+                    "two"
+                    "three"
+                    "four"
+                    "five";
+        }
+
         &__item {
             padding: 35px 25px 40px 20px;
             display: flex;
@@ -17,40 +33,6 @@
             border-radius: 12px;
             box-shadow: $main-shadow;
             overflow: hidden;
-
-            &--one {
-                padding: 0;
-                width: 500px;
-                grid-area: one;
-
-                .content {
-                    padding: 35px 30px 40px 30px;
-                }
-
-                .title {
-                    margin-bottom: 5px;
-                }
-
-                .date {
-                    margin-bottom: 0;
-                }
-            }
-
-            &--two {
-                grid-area: two;
-            }
-
-            &--three {
-                grid-area: three;
-            }
-
-            &--four {
-                grid-area: four;
-            }
-
-            &--five {
-                grid-area: five;
-            }
 
             .img {
                 overflow: hidden;
@@ -69,6 +51,7 @@
                 color: #fff;
                 font-size: 14px;
                 font-weight: 500;
+                text-transform: uppercase;
                 border-radius: 7px;
             }
 
@@ -80,6 +63,10 @@
                 line-height: 1.5;
                 text-overflow: ellipsis;
                 overflow: hidden;
+
+                @media (max-width: 768px) {
+                    height: 40px;
+                }
             }
 
             .descr {
@@ -119,6 +106,58 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+            }
+
+            &--one {
+                padding: 0;
+                width: 500px;
+                grid-area: one;
+
+                @media (max-width: 992px) {
+                    width: 100%;
+                }
+
+                .content {
+                    padding: 35px 30px 40px 30px;
+                }
+
+                .img {
+
+                    img {
+
+                        @media (max-width: 992px) {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .title {
+                    margin-bottom: 5px;
+
+                    @media (max-width: 768px) {
+                        height: 60px;
+                    }
+                }
+
+                .date {
+                    margin-bottom: 0;
+                }
+            }
+
+            &--two {
+                grid-area: two;
+            }
+
+            &--three {
+                grid-area: three;
+            }
+
+            &--four {
+                grid-area: four;
+            }
+
+            &--five {
+                grid-area: five;
             }
         }
     }
