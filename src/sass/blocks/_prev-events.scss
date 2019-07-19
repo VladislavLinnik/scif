@@ -30,14 +30,28 @@
                 color: $dark;
                 overflow: hidden;
 
+                @media (max-width: 576px) {
+                    flex-direction: column;
+                }
+
                 .event__img {
                     max-height: 260px;
                     width: 260px;
                     overflow: hidden;
+
+                    @media (max-width: 576px) {
+                        max-height: 260px;
+                        width: 100%;
+                    }
         
                     img {
                         max-width: 100%;
                         display: block;
+
+                        @media (max-width: 576px) {
+                            max-width: none;
+                            width: 100%;
+                        }
                     }
                 }
         
@@ -58,6 +72,10 @@
                         line-height: 1.5;
                         text-overflow: ellipsis;
                         overflow: hidden;
+
+                        @media (max-width: 568px) {
+                            height: auto;
+                        }
                     }
         
                     .descr {
@@ -96,6 +114,10 @@
                 height: 460px;
                 grid-area: one;
 
+                @media (max-width: 576px) {
+                    height: auto;
+                }
+
                 &.event {
                     flex-direction: column;
 
@@ -121,16 +143,28 @@
             &--two {
                 height: 40px;
                 grid-area: two;
+
+                @media (max-width: 576px) {
+                    height: auto;
+                }
             }
 
             &--three {
                 height: 255px;
                 grid-area: three;
+
+                @media (max-width: 576px) {
+                    height: auto;
+                }
             }
 
             &--four {
                 height: 255px;
                 grid-area: four;
+
+                @media (max-width: 576px) {
+                    height: auto;
+                }
             }
         }
     }

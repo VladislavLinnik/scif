@@ -26,6 +26,14 @@
             font-size: 64px;
             font-weight: bold;
             line-height: normal;
+
+            @media (max-width: 768px) {
+                font-size: 50px;
+            }
+
+            @media (max-width: 576px) {
+                font-size: 40px;
+            }
         }
 
         .text {
@@ -35,6 +43,10 @@
 
             @media (max-width: 992px) {
                 margin-top: 10px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 18px;
             }
         }
     }
@@ -57,6 +69,10 @@
 
                 &:not(:last-child) {
                     margin-right: 40px;
+                    
+                    @media (max-width: 420px) {
+                        margin-right: 20px;
+                    }
                 }
             }
 

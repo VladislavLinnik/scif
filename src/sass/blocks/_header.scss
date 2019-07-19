@@ -35,6 +35,11 @@
             position: relative;
         }
 
+        @media (max-width: 576px) {
+            margin-right: 0;
+            position: static;
+        }
+
         .menu {
             display: flex;
             align-items: center;

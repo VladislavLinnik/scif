@@ -1,5 +1,5 @@
 .partners {
-    padding: 10vh;
+    padding: 10vh 0;
 
     .tabs {
         display: flex;
@@ -63,14 +63,23 @@
             display: flex;
             align-items: center;
 
+            @media (max-width: 992px) {
+                flex-direction: column;
+            }
+
             .text {
                 margin-right: 130px;
-                height: 60px;
                 color: $dark;
                 font-size: 21px;
                 line-height: 1.67;
                 text-overflow: ellipsis;
                 overflow: hidden;
+
+                @media (max-width: 992px) {
+                    margin-right: 0;
+                    margin-bottom: 30px;
+                    text-align: justify;
+                }
             }
 
             .link {

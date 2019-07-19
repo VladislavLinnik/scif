@@ -8,8 +8,12 @@
         border-radius: 7px;
         box-shadow: $main-shadow;
 
+        @media (max-width: 500px) {
+            width: 300px;
+        }
+
         &__img {
-            height: 260px;
+            max-height: 360px;
             overflow: hidden;
 
             img {
@@ -70,6 +74,10 @@
         border-radius: 7px;
         box-shadow: $main-shadow;
 
+        @media (max-width: 500px) {
+            width: 300px;
+        }
+
         &:not(:last-child) {
             margin-right: 30px;
 
@@ -94,7 +102,7 @@
             overflow: hidden;
 
             @media (max-width: 992px) {
-                height: 230px;
+                height: auto;
             }
 
             img {

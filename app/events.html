@@ -16,6 +16,7 @@
 
     <!-- STYLES -->
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- JQUERY -->
@@ -177,19 +178,69 @@
     <div class="wrap reviews__wrap">
         <h2 class="reviews__title section-title">Отзывы</h2>
 
-        <div class="slide">
-            <div class="slide__img">
-                <img src="./img/reviews/1.jpg" alt="">
+        <div class="owl-carousel">
+            <div class="slide">
+                <div class="slide__img">
+                    <img src="./img/reviews/1.jpg" alt="">
+                </div>
+                <div class="slide__info">
+                    <p class="text">
+                        SCIF Congress является отличным местом встречи руководителей и технических специалистов компаний и предприятий разных стран. На Конгрессе представлены многочисленные инжиниринговые компании с мировым именем.
+                        Интересные доклады, знакомства с новинками отрасли, неформальные встречи, общение с коллегами – это все присутствует и делает Конгресс интересным и долгожданным ежегодным событием.
+                        Отличная организация, достойная культурная программа и комфортная рабочая среда делает ежегодный Конгресс SCIF одним из главных мероприятий в новом рабочем календаре.
+                    </p>
+                    <div class="details">
+                        <h4 class="fullname">Буканин Александр Владимирович</h4>
+                        <p class="position">Руководитель департамента нефтехимического оборудования
+                            ООО «Арсенал Групп»</p>
+                        <div class="slide__arrows">
+                            <button class="arrow-btn prev-btn disabled">&larr;</button>
+                            <button class="arrow-btn next-btn">&rarr;</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="slide__info">
-                <p class="text">
-                    SCIF Congress является отличным местом встречи руководителей и технических специалистов компаний и предприятий разных стран. На Конгрессе представлены многочисленные инжиниринговые компании с мировым именем.
-                    Интересные доклады, знакомства с новинками отрасли, неформальные встречи, общение с коллегами – это все присутствует и делает Конгресс интересным и долгожданным ежегодным событием.
-                    Отличная организация, достойная культурная программа и комфортная рабочая среда делает ежегодный Конгресс SCIF одним из главных мероприятий в новом рабочем календаре.
-                </p>
-                <h4 class="fullname">Буканин Александр Владимирович</h4>
-                <p class="position">Руководитель департамента нефтехимического оборудования
-                    ООО «Арсенал Групп»</p>
+            <div class="slide">
+                <div class="slide__img">
+                    <img src="./img/reviews/1.jpg" alt="">
+                </div>
+                <div class="slide__info">
+                    <p class="text">
+                        SCIF Congress является отличным местом встречи руководителей и технических специалистов компаний и предприятий разных стран. На Конгрессе представлены многочисленные инжиниринговые компании с мировым именем.
+                        Интересные доклады, знакомства с новинками отрасли, неформальные встречи, общение с коллегами – это все присутствует и делает Конгресс интересным и долгожданным ежегодным событием.
+                        Отличная организация, достойная культурная программа и комфортная рабочая среда делает ежегодный Конгресс SCIF одним из главных мероприятий в новом рабочем календаре.
+                    </p>
+                    <div class="details">
+                        <h4 class="fullname">Буканин Александр Владимирович</h4>
+                        <p class="position">Руководитель департамента нефтехимического оборудования
+                            ООО «Арсенал Групп»</p>
+                        <div class="slide__arrows">
+                            <button class="arrow-btn prev-btn">&larr;</button>
+                            <button class="arrow-btn next-btn">&rarr;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide__img">
+                    <img src="./img/reviews/1.jpg" alt="">
+                </div>
+                <div class="slide__info">
+                    <p class="text">
+                        SCIF Congress является отличным местом встречи руководителей и технических специалистов компаний и предприятий разных стран. На Конгрессе представлены многочисленные инжиниринговые компании с мировым именем.
+                        Интересные доклады, знакомства с новинками отрасли, неформальные встречи, общение с коллегами – это все присутствует и делает Конгресс интересным и долгожданным ежегодным событием.
+                        Отличная организация, достойная культурная программа и комфортная рабочая среда делает ежегодный Конгресс SCIF одним из главных мероприятий в новом рабочем календаре.
+                    </p>
+                    <div class="details">
+                        <h4 class="fullname">Буканин Александр Владимирович</h4>
+                        <p class="position">Руководитель департамента нефтехимического оборудования
+                            ООО «Арсенал Групп»</p>
+                        <div class="slide__arrows">
+                            <button class="arrow-btn prev-btn">&larr;</button>
+                            <button class="arrow-btn next-btn disabled">&rarr;</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -336,6 +387,22 @@
 </footer>
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    // slider
+    let owl = $('.owl-carousel');
+    owl.owlCarousel({
+        items: 1
+    });
+
+    $('body').on('click', '.prev-btn', function() {
+        owl.trigger('prev.owl.carousel', [300]);
+    });
+
+    $('body').on('click', '.next-btn', function() {
+        owl.trigger('next.owl.carousel');
+    });
+</script>
 <script src="js/index.js"></script>
 </body>
 </html>
