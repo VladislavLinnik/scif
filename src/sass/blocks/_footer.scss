@@ -33,11 +33,19 @@
                 margin-bottom: 15px;
                 font-weight: 500;
                 text-transform: uppercase;
+
+                @media (max-width: 576px) {
+                    margin-bottom: 5px;
+                }
             }
 
             &__descr {
                 margin-bottom: 15px;
                 line-height: 1.5;
+
+                @media (max-width: 576px) {
+                    margin-bottom: 5px;
+                }
             }
 
             &__list {
@@ -73,6 +81,10 @@
                     top: 50%;
                     transform: translateY(-50%);
                     background: url('../img/icons/mail.png') no-repeat;
+                
+                    @media (max-width: 576px) {
+                        left: 10px;
+                    }
                 }
         
                 .input {
@@ -81,6 +93,10 @@
                     width: 100%;
                     border-radius: 7px;
                     border: none;
+
+                    @media (max-width: 576px) {
+                        padding: 10px 110px 10px 40px;
+                    }
                 }
         
                 .button {
@@ -97,6 +113,11 @@
                     text-transform: uppercase;
                     border-radius: 7px;
                     cursor: pointer;
+
+                    @media (max-width: 576px) {
+                        width: 100px;
+                        font-size: 12px;
+                    }
                 }
             }
 
