@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function($) {
 
 // header scroll
 $(window).on('load scroll', function () {
@@ -6,12 +6,80 @@ $(window).on('load scroll', function () {
 });
 
 function stickyHeader() {
-    if ($(this).scrollTop() > 200) {
+    if ($(this).scrollTop() > 0) {
         $('.header').addClass("header--sticky");
     } else {
         $('.header').removeClass("header--sticky");
     }
 }
+
+
+
+// registration form
+// $('.js-firstStep').hide();
+$('.js-secondStep').hide();
+$('.js-thirdStep').hide();
+$('.js-fourStep').hide();
+$('.js-finalStep').hide();
+
+$('.js-registerCircle').eq(0).addClass('active');
+
+// hide first screen
+$('.js-nextBtn1').on('click', function(){
+    $('.js-firstStep').hide();
+    $('.js-secondStep').show();
+
+    $('.js-registerCircle').removeClass('active');
+    $('.js-registerCircle').eq(1).addClass('active');
+});
+
+$('.js-nextBtn2').on('click', function(){
+    $('.js-secondStep').hide();
+    $('.js-thirdStep').show();
+    
+    $('.js-registerCircle').removeClass('active');
+    $('.js-registerCircle').eq(2).addClass('active');
+});
+
+$('.js-nextBtn3').on('click', function(){
+    $('.js-thirdStep').hide();
+    $('.js-fourStep').show();
+
+    $('.js-registerCircle').removeClass('active');
+    $('.js-registerCircle').eq(3).addClass('active');
+});
+
+$('.js-nextBtn4').on('click', function(){
+    $('.js-fourStep').hide();
+    $('.js-finalStep').show();
+    $('.register__progress').hide();
+});
+
+// custom input file
+var inputs = document.querySelectorAll('.js-inputFile');
+Array.prototype.forEach.call( inputs, function(input) {
+    var label = input.nextElementSibling,
+        labelVal = label.innerHTML;
+
+        input.addEventListener('change', function(e){
+            var fileName = "";
+            if (this.files && this.files.length > 1) {
+                fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);
+            }
+            else {
+                fileName = e.target.value.split('\\').pop();
+            }
+
+            if (fileName) {
+                label.querySelector('span').innerHTML = fileName;
+            }
+            else {
+                label.innerHTML = labelVal;
+            }
+        })
+} )
+
+
 
 
 // toggle header menu
@@ -54,6 +122,17 @@ $('.js-auditoryCircle').on('click', function () {
     $(`[data-info]`).removeClass('active');
     $(`[data-info=${indexItem}]`).addClass('active');
 });
+
+
+
+// show tooltip
+$('.js-checkboxLabel, .js-checkboxInput').on('mouseenter', function(){
+    $(this).siblings('.tooltip').show();
+});
+$('.js-checkboxLabel, .js-checkboxInput').on('mouseleave', function(){
+    $(this).siblings('.tooltip').hide();
+});
+
 
 
 // custom select for languages

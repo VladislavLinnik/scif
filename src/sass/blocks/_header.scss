@@ -262,7 +262,7 @@
         }
     }
 
-    &--not-found {
+    &--dark {
 
         .header__nav {
 
@@ -308,6 +308,113 @@
 
                 &__link {
                     color: $dark;
+                }
+
+                &__toggle {
+                    height: 30px;
+                    width: 28px;
+                    display: none;
+                    cursor: pointer;
+    
+                    @media (max-width: 900px) {
+                        display: flex;
+                        align-items: center;
+                    }
+    
+                    &.on {
+    
+                        span {
+                            background-color: transparent;
+    
+                            &::before {
+                                transform: rotate(45deg) translate(5px, 5px);
+                            }
+    
+                            &::after {
+                                transform: rotate(-45deg) translate(7px, -8px);
+                            }
+                        }
+                    }
+    
+                    span {
+                        position: relative;
+                        display: block;
+                        width: 100%;
+                        height: 5px;
+                        background-color: #000;
+                        transition: all 0.3s;
+                        backface-visibility: hidden;
+                        border-radius: 2px;
+    
+                        &::before,
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            top: -9px;
+                            width: 100%;
+                            height: 5px;
+                            background-color: #000;
+                            transition: all 0.3s;
+                            backface-visibility: hidden;
+                            border-radius: 2px;
+                        }
+    
+                        &::after {
+                            top: 9px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.header--sticky {
+
+            .header__nav {
+
+                .menu {
+
+                    &__item {
+
+                        &--langs {
+    
+                            .select-styled {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                bottom: 0;
+                                left: 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                color: #fff;
+                                text-transform: uppercase;
+                                transition: all 0.2s ease-in;
+    
+                                &:after {
+                                    content:"";
+                                    width: 0;
+                                    height: 0;
+                                    border: 5px solid transparent;
+                                    border-color: #fff transparent transparent transparent;
+                                    position: absolute;
+                                    top: 21px;
+                                    right: 5px
+                                }
+                                &:active, &.active {
+    
+                                    &:after {
+                                        top: 15px;
+                                        border-color: transparent transparent #fff transparent;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &__link {
+                        color: #fff;
+                    }
                 }
             }
         }
