@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da3fd042-dc2b-4553-99a2-ad63b412990d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/blocks/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/blocks/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/blocks/_future-events.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/blocks/_future-events.scss" afterDir="false" />
-    </list>
+    <list default="true" id="da3fd042-dc2b-4553-99a2-ad63b412990d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +24,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/about.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="346">
-                  <caret line="363" column="19" selection-start-line="363" selection-start-column="19" selection-end-line="363" selection-end-column="19" />
+                <state relative-caret-position="176">
+                  <caret line="353" column="68" lean-forward="true" selection-start-line="353" selection-start-column="68" selection-end-line="353" selection-end-column="68" />
                   <folding>
                     <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
@@ -282,12 +272,12 @@
       <workItem from="1563428002208" duration="13010000" />
       <workItem from="1563459195125" duration="3458000" />
       <workItem from="1563514807521" duration="16132000" />
-      <workItem from="1563802761429" duration="4312000" />
+      <workItem from="1563802761429" duration="4388000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53517000" />
+    <option name="totallyTimeSpent" value="53593000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -547,8 +537,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="363" column="19" selection-start-line="363" selection-start-column="19" selection-end-line="363" selection-end-column="19" />
+        <state relative-caret-position="176">
+          <caret line="353" column="68" lean-forward="true" selection-start-line="353" selection-start-column="68" selection-end-line="353" selection-end-column="68" />
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
