@@ -8,35 +8,14 @@
     }
 
     &__item {
-        width: 32%;
+        margin-bottom: 45px;
+        width: 50%;
         justify-content: space-between;
         text-align: center;
         color: $dark;
 
-        &:nth-child(-n + 3) {
-            margin-bottom: 45px;
-
-            @media (max-width: 992px) {
-                margin-bottom: 30px;
-            }
-        }
-
-        &:nth-child(-n + 2) {
-
-            @media (max-width: 992px) {
-                margin-bottom: 30px;
-            }
-        }
-
-        &:not(:last-child) {
-
-            @media (max-width: 768px) {
-                margin-bottom: 30px;
-            }
-        }
-
         @media (max-width: 992px) {
-            width: 50%;
+            margin-bottom: 30px;
         }
 
         @media (max-width: 768px) {
