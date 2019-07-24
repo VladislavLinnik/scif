@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da3fd042-dc2b-4553-99a2-ad63b412990d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/blocks/_banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/blocks/_banner.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/blocks/_blog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/blocks/_blog.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/blocks/_contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/blocks/_contact.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/blocks/_events.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/blocks/_events.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/blocks/_future-events.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/blocks/_future-events.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/blocks/_last-news.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/blocks/_last-news.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/blocks/_prev-events.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/blocks/_prev-events.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/blocks/_reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/blocks/_reviews.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/settings/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/settings/_common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/blocks/_event.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/blocks/_event.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,12 +92,12 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/sass/blocks/_event.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="444">
-                  <caret line="241" column="28" selection-start-line="241" selection-start-column="28" selection-end-line="241" selection-end-column="28" />
+                <state relative-caret-position="308">
+                  <caret line="87" column="30" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
                   <folding>
                     <element signature="e#13#21#0" />
-                    <element signature="e#1201#1214#0" />
                     <element signature="e#2644#2678#0" />
+                    <element signature="e#3548#3556#0" />
                   </folding>
                 </state>
               </provider>
@@ -261,18 +248,18 @@
       <workItem from="1563802761429" duration="4388000" />
       <workItem from="1563859975305" duration="252000" />
       <workItem from="1563864006704" duration="9587000" />
-      <workItem from="1563967050269" duration="8223000" />
+      <workItem from="1563967050269" duration="8616000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71655000" />
+    <option name="totallyTimeSpent" value="72048000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19288956" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19288956" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -589,12 +576,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/blocks/_event.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="241" column="28" selection-start-line="241" selection-start-column="28" selection-end-line="241" selection-end-column="28" />
+        <state relative-caret-position="308">
+          <caret line="87" column="30" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
           <folding>
             <element signature="e#13#21#0" />
-            <element signature="e#1201#1214#0" />
             <element signature="e#2644#2678#0" />
+            <element signature="e#3548#3556#0" />
           </folding>
         </state>
       </provider>
