@@ -93,12 +93,12 @@
                         font-size: 14px;
                         font-weight: 600;
                         text-decoration: underline;
+                        cursor: pointer;
         
                         &:after {
                             content: '\2192';
-                            margin-left: 10%;
+                            padding-left: 5%;
                             position: absolute;
-                            left: 100%;
                             top: 50%;
                             transform: translateY(-50%);
                         }
