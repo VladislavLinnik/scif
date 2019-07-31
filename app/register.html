@@ -23,7 +23,7 @@
 
 	<!-- SCRIPTS -->
 
-	
+
 	<title>SCIF || Register</title>
 </head>
 <body>
@@ -92,8 +92,9 @@
                         <div class="form-group">
                             <input class="input input--text" type="text" placeholder="*Юр. адрес компании">
                         </div>
-                        <div class="form-group form-group--two">
+                        <div class="form-group form-group--two-text">
                             <input class="input input--text" type="text" placeholder="ИНН/КПП">
+                            <span>или</span>
                             <input class="input input--text" type="text" placeholder="ЕДРПОУ">
                         </div>
                         <div class="form-group form-group--two">
@@ -108,11 +109,13 @@
                             <input class="input input--tel" type="tel" placeholder="*Телефон">
                         </div>
                         <div class="form-group">
+                            <input class="input" type="url" placeholder="Сайт">
+                        </div>
+                        <div class="form-group">
                             <select class="input input--select">
                                 <option value="" disabled selected>Необходимость договора</option>
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
+                                <option value="">Да</option>
+                                <option value="">Нет</option>
                             </select>
                         </div>
                         <div class="form-group form-group--attach">
@@ -123,12 +126,26 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <select class="input input--select">
+                            <select class="input input--select" name="activity">
                                 <option value="" disabled selected>Деятельность компании</option>
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
+                                <option value="">Производитель: Удобрения</option>
+                                <option value="">Производитель: Пестициды</option>
+                                <option value="">Операционная компания: Нефть и Газ</option>
+                                <option value="">Инжиниринговые компании и НИИ</option>
+                                <option value="">Оборудование</option>
+                                <option value="">Трейдер/Импорт/Экспорт</option>
+                                <option value="">Логистика/Дистрибуция</option>
+                                <option value="">Инвесторы</option>
+                                <option value="">Агроиндустрия</option>
+                                <option value="">Химическая индустрия</option>
+                                <option value="">Металлы и сплавы</option>
+                                <option value="">Высшие учебные заведения</option>
+                                <option value="">Пресса</option>
+                                <option value="other">Ваш вариант</option>
                             </select>
+                        </div>
+                        <div class="form-group js-otherOption" id="otherOption1">
+                            <input class="input" type="text" placeholder="Ваш вариант">
                         </div>
                         <div class="form-group">
                             <button class="btn btn-next js-nextBtn2" type="button">Дальше</button>
@@ -156,7 +173,7 @@
                             <input type="text" class="input input--text" placeholder="*Отчество">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="input input--text" placeholder="*Имя и фамилия на языке (для бейджа)">
+                            <input type="text" class="input input--text" placeholder="*Имя и фамилия на англ. языке (для бейджа)">
                         </div>
                         <div class="form-group form-group--two">
                             <input type="text" class="input input--text" placeholder="*Должность">
@@ -178,7 +195,7 @@
                                 <input class="checkbox-input js-checkboxInput" id="checkboxInput1" type="checkbox">
                                 <label class="checkbox-label js-checkboxLabel" for="checkboxInput1"></label>
                                 <div class="tooltip">
-                                        Оставьте поле пустым, если вы не хотите, чтовы вас размещали в списке участников    
+                                        Оставьте поле пустым, если вы не хотите, чтовы вас размещали в списке участников
                                 </div>
                             </div>
                         </div>
@@ -199,7 +216,7 @@
                         <div class="form-group form-group--checkbox">
                             <div class="info">
                                 <p class="text-big">
-                                    *Спонсорство
+                                    Спонсорство
                                 </p>
                             </div>
                             <div class="checkbox">
@@ -224,7 +241,7 @@
                         <div class="form-group form-group--checkbox">
                             <div class="info">
                                 <p class="text-big">
-                                    Презентационный доклад
+                                    Доклад/Презентация
                                 </p>
                             </div>
                             <div class="checkbox">
@@ -232,13 +249,26 @@
                                 <label class="checkbox-label js-checkboxLabel" for="checkboxInput4"></label>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <select class="input input--select">
+                        <div class="form-group" id="subjectSelect">
+                            <select class="input input--select" name="subject">
                                 <option value="" disabled selected>Тематика</option>
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
+                                <option value="">Удобрения</option>
+                                <option value="">Пестициды</option>
+                                <option value="">Оборудования</option>
+                                <option value="">Катализаторы</option>
+                                <option value="">Металлы и сплавы</option>
+                                <option value="">Безопасность производства</option>
+                                <option value="">Экология</option>
+                                <option value="">Автоматизация производства</option>
+                                <option value="">Наука</option>
+                                <option value="">Логистика</option>
+                                <option value="">Закупка</option>
+                                <option value="">Водоподготовка и водоочистка</option>
+                                <option value="other">Ваш вариант</option>
                             </select>
+                        </div>
+                        <div class="form-group js-otherOption" id="otherOption2">
+                            <input class="input" type="text" placeholder="Ваш вариант">
                         </div>
                         <div class="form-group form-group--checkbox">
                             <div class="info">
@@ -254,13 +284,15 @@
                                 </div>
                             </div>
                         </div>
+                        <h3 class="title">Откуда вы узнали о конгрессе</h3>
                         <div class="form-group">
-                            <select class="input input--select">
-                                <option value="" disabled selected>Откуда вы узнали о конгрессе</option>
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                            </select>
+                            <input type="text" class="input" placeholder="">
+                            <!--<select class="input input&#45;&#45;select">-->
+                                <!--<option value="" disabled selected>Откуда вы узнали о конгрессе</option>-->
+                                <!--<option value="">1</option>-->
+                                <!--<option value="">2</option>-->
+                                <!--<option value="">3</option>-->
+                            <!--</select>-->
                         </div>
                         <div class="form-group form-group--checkbox">
                             <div class="info">

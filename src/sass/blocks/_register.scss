@@ -74,11 +74,12 @@
                         height: 40px;
                         width: 100%;
                         background-color: #fff;
+                        color: #000;
                         border: 1px solid rgba($dark, .2);
                         border-radius: 7px;
 
-                        &.uncorrect {
-                            border-color: red;
+                        &::placeholder {
+                            color: lighten(#000, 10%);
                         }
 
                         &--email {
@@ -119,6 +120,19 @@
                             &:first-child {
                                 margin-right: 4%;
                             }
+                        }
+                    }
+
+                    &--two-text {
+
+                        .input {
+                            width: 48%;
+                        }
+
+                        span {
+                            margin: 0 2%;
+                            display: inline-block;
+                            line-height: 40px;
                         }
                     }
 

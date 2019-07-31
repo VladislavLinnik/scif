@@ -82,6 +82,42 @@ Array.prototype.forEach.call( inputs, function(input) {
 
 
 
+// show field when selected 'other'
+$('.js-otherOption').hide();
+
+function showOtherField(selectName, showInput) {
+
+    $(`select[name="${selectName}"]`).on('change', function() {
+        let selectIndex = $(this)[0].selectedIndex;
+        let selectOption = $(this)[0].options[selectIndex];
+        console.log(selectIndex, selectOption);
+        if (selectOption.value == 'other') {
+            $(`${showInput}`).show();
+        }
+        else {
+            $(`${showInput}`).hide();
+        }
+    });
+
+}
+
+showOtherField('activity', '#otherOption1');
+showOtherField('subject', '#otherOption2');
+
+
+// show select when checkbox is checked
+$('#subjectSelect').hide();
+$('#checkboxInput4').on('change', function() {
+    if( $(this)[0].checked ) {
+        $('#subjectSelect').show();
+    }
+    else {
+        $('#subjectSelect').hide();
+        $('#otherOption2').hide();
+    }
+});
+
+
 // toggle header menu
 $('.js-toggleMenu').click(function () {
 

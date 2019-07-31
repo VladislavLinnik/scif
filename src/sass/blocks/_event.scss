@@ -69,18 +69,23 @@
 
 .topics {
     padding: 10vh 0;
-    background-color: #f9f9f9;
+    //background-color: #f9f9f9;
 
     &__wrap {
         display: flex;
         align-items: center;
 
         &--reverse {
-            margin-top: 30px;
+            margin-top: 50px;
             flex-direction: row-reverse;
 
             .topics__img {
                 margin-right: 0;
+                text-align: right;
+            }
+
+            .topics__info {
+                margin-right: 5%;
             }
         }
 
@@ -92,6 +97,7 @@
     &__img {
         margin-right: 5%;
         flex: 1;
+        border-radius: 7px;
         overflow: hidden;
 
         @media (max-width: 992px) {
@@ -100,6 +106,10 @@
 
         @media (max-width: 768px) {
             max-width: 100%;
+        }
+
+        img {
+            border-radius: 20px;
         }
     }
 
