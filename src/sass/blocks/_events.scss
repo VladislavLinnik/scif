@@ -87,6 +87,16 @@
             }
         }
 
+        &:first-child {
+
+            .event__img {
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+
         &__wrap {
             display: flex;
             justify-content: space-between;
