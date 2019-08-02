@@ -103,4 +103,14 @@
             }
         }
     }
+
+    &--event-page {
+        
+        .slide__img {
+            
+            &.no-photo {
+                flex: 0;
+            }
+        }
+    }
 }

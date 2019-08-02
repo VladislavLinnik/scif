@@ -112,7 +112,7 @@
                             <input class="input" type="url" placeholder="Сайт">
                         </div>
                         <div class="form-group">
-                            <select class="input input--select">
+                            <select class="input input--select js-registerFormSelect">
                                 <option value="" disabled selected>Необходимость договора</option>
                                 <option value="">Да</option>
                                 <option value="">Нет</option>
@@ -126,7 +126,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <select class="input input--select" name="activity">
+                            <select class="input input--select js-registerFormSelect" name="activity" id="activitySelect">
                                 <option value="" disabled selected>Деятельность компании</option>
                                 <option value="">Производитель: Удобрения</option>
                                 <option value="">Производитель: Пестициды</option>
@@ -185,19 +185,40 @@
                         <div class="form-group form-group--checkbox">
                             <div class="info">
                                 <p class="text-big">
-                                    *Согласие на размещение в списке участников
+                                    *Согласие на размещение в списке делегатов
                                 </p>
                                 <p class="text-small">
-                                    Мы организуем международные конгрессы и рассылаем список участников конгресса (имя, компания и страна) всем делегатам конгресса. Список также размещаются на сайте SCIF Congress
+                                    Я согласен, что организаторы мероприятия могут включить мою деловую информацию в список делегатов, который будет передан зарегистрированным делегатам и другим участникам конференции для этого мероприятия.
                                 </p>
                             </div>
                             <div class="checkbox">
-                                <input class="checkbox-input js-checkboxInput" id="checkboxInput1" type="checkbox">
-                                <label class="checkbox-label js-checkboxLabel" for="checkboxInput1"></label>
+                                <input class="checkbox-input js-checkboxInput" id="checkboxInput11" type="checkbox">
+                                <label class="checkbox-label js-checkboxLabel" for="checkboxInput11"></label>
                                 <div class="tooltip">
-                                        Оставьте поле пустым, если вы не хотите, чтовы вас размещали в списке участников
+                                        Оставьте поле пустым, если вы не хотите, чтовы вас размещали в списке делегатов
                                 </div>
                             </div>
+                        </div>
+                        <div class="form-group form-group--checkbox">
+                            <div class="info">
+                                <p class="text-big">
+                                    Визовое приглашение
+                                </p>
+                                <p class="text-small">
+                                    Я согласен, что организаторы мероприятия могут включить мою деловую информацию в список делегатов, который будет передан зарегистрированным делегатам и другим участникам конференции для этого мероприятия.
+                                </p>
+                            </div>
+                            <div class="checkbox">
+                                <input class="checkbox-input js-checkboxInput" id="checkboxInput12" type="checkbox">
+                                <label class="checkbox-label js-checkboxLabel" for="checkboxInput12"></label>
+                            </div>
+                        </div>
+                        <h3 class="title">Согласие на список делегатов</h3>
+                        <div class="form-group">
+                            <select class="input input--select js-registerFormSelect">
+                                <option value="">Да</option>
+                                <option value="">Нет - Предупреждение, вы не будете включены в список делегатов, и вам не будет предоставлен доступ к списку</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <button class="btn btn-next js-nextBtn3" type="button">Дальше</button>
@@ -250,7 +271,7 @@
                             </div>
                         </div>
                         <div class="form-group" id="subjectSelect">
-                            <select class="input input--select" name="subject">
+                            <select class="input input--select js-registerFormSelect" name="subject">
                                 <option value="" disabled selected>Тематика</option>
                                 <option value="">Удобрения</option>
                                 <option value="">Пестициды</option>
@@ -286,13 +307,18 @@
                         </div>
                         <h3 class="title">Откуда вы узнали о конгрессе</h3>
                         <div class="form-group">
-                            <input type="text" class="input" placeholder="">
-                            <!--<select class="input input&#45;&#45;select">-->
-                                <!--<option value="" disabled selected>Откуда вы узнали о конгрессе</option>-->
-                                <!--<option value="">1</option>-->
-                                <!--<option value="">2</option>-->
-                                <!--<option value="">3</option>-->
-                            <!--</select>-->
+                            <select class="input input--select js-registerFormSelect" name="whereknown">
+                                <option value="">Электронная почта</option>
+                                <option value="">Звонок менеджера</option>
+                                <option value="">Интернет</option>
+                                <option value="">Социальные сети</option>
+                                <option value="">Знакомые, коллеги</option>
+                                <option value="">Социальные сети</option>
+                                <option value="other">Ваш вариант</option>
+                            </select>
+                        </div>
+                        <div class="form-group js-otherOption" id="otherOption3">
+                            <input class="input" type="text" placeholder="Ваш вариант">
                         </div>
                         <div class="form-group form-group--checkbox">
                             <div class="info">
