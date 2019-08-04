@@ -172,7 +172,7 @@
     <!--<p class="descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, fuga.</p>-->
 
     <div class="owl-carousel owl-carousel-photos">
-        <div class="slide"><img src="./img/event-photo/2018/1.jpg" alt=""></div>-->
+        <div class="slide"><img src="./img/event-photo/2018/1.jpg" alt=""></div>
         <!-- <div class="slide"><img src="./img/event-photo/2018/2.jpg" alt=""></div> -->
         <div class="slide"><img src="./img/event-photo/2018/3.jpg" alt=""></div>
         <div class="slide"><img src="./img/event-photo/2018/4.jpg" alt=""></div>
@@ -616,7 +616,8 @@
     let owl2 = $('.owl-carousel-reviews');
     owl2.owlCarousel({
         items: 1,
-        dots: false
+        dots: false,
+        adaptiveHeight: true
     });
 
     $('body').on('click', '.prev-btn', function() {
