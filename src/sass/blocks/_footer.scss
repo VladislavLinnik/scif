@@ -198,6 +198,18 @@
             }
         }
 
+        .link {
+            margin-right: 20px;
+            display: inline-block;
+            color: #fff;
+
+            @media (max-width: 768px) {
+                margin-right: 0;
+                margin-bottom: 5px;
+                display: block;
+            }
+        }
+
         .copy__powered {
 
             @media (max-width: 576px) {
@@ -206,18 +218,10 @@
         }
 
         .copy__reserved {
+            display: flex;
+            justify-content: space-between;
 
-            .link {
-                margin-right: 20px;
-                display: inline-block;
-                color: #fff;
-
-                @media (max-width: 768px) {
-                    margin-right: 0;
-                    margin-bottom: 5px;
-                    display: block;
-                }
-            }
+            
 
             span:first-child {
                 margin-right: 20px;
