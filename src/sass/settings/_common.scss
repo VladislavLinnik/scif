@@ -26,6 +26,34 @@ body {
     margin: 0 auto;
 }
 
+.policy {
+    padding: 20vh 0;
+    background-color: #fff;
+
+    h1 {
+        margin-bottom: 20px;
+        color: $dark;
+        font-size: 30px;
+    }
+
+    h2 {
+        margin: 15px 0;
+        color: $dark;
+        font-size: 26px;
+    }
+
+    p {
+        margin-bottom: 10px;
+        color: rgba($dark, .5);
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    a {
+        color: $azure;
+    }
+}
+
 
 
 .btn {

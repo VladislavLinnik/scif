@@ -188,7 +188,7 @@
                                     *Согласие на размещение в списке делегатов
                                 </p>
                                 <p class="text-small">
-                                    Я согласен, что организаторы мероприятия могут включить мою деловую информацию в список делегатов, который будет передан зарегистрированным делегатам и другим участникам конференции для этого мероприятия.
+                                    Я согласен, что организаторы мероприятия могут включить мою деловую информацию в список делегатов, который будет передан зарегистрированным делегатам и другим участникам этого мероприятия.
                                 </p>
                             </div>
                             <div class="checkbox">
@@ -234,40 +234,80 @@
                         <h2 class="title">Регистрационная форма</h2>
                     </div>
                     <div class="form-body">
-                        <div class="form-group form-group--checkbox">
+                        <div class="form-group form-group--checkbox form-group--radio">
                             <div class="info">
                                 <p class="text-big">
                                     Спонсорство
                                 </p>
                             </div>
-                            <div class="checkbox">
-                                <input class="checkbox-input js-checkboxInput" id="checkboxInput2" type="checkbox">
-                                <label class="checkbox-label js-checkboxLabel" for="checkboxInput2"></label>
-                                <div class="tooltip">
-                                    Оставьте поле пустым, если вы не желаете быть спонсором
+                            <div class="radio">
+                                <div class="radio-col">
+                                    <p class="text">Да</p>
+                                    <input type="radio" id="radio-1-1" name="radio-1-set" class="ui-radio" />
+                                    <label for="radio-1-1"></label>
+                                </div>
+                                <div class="radio-col">
+                                    <p class="text">Нет</p>
+                                    <input type="radio" id="radio-1-2" name="radio-1-set" class="ui-radio" />
+                                    <label for="radio-1-2"></label>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group form-group--checkbox">
+                        <div class="form-group form-group--checkbox form-group--radio">
                             <div class="info">
                                 <p class="text-big">
                                     Выставочный стенд
                                 </p>
                             </div>
-                            <div class="checkbox">
-                                <input class="checkbox-input js-checkboxInput" id="checkboxInput3" type="checkbox">
-                                <label class="checkbox-label js-checkboxLabel" for="checkboxInput3"></label>
+                            <div class="radio">
+                                <div class="radio-col">
+                                    <p class="text">Да</p>
+                                    <input type="radio" id="radio-1-3" name="radio-2-set" class="ui-radio" />
+                                    <label for="radio-1-3"></label>
+                                </div>
+                                <div class="radio-col">
+                                    <p class="text">Нет</p>
+                                    <input type="radio" id="radio-1-4" name="radio-2-set" class="ui-radio" />
+                                    <label for="radio-1-4"></label>
+                                </div>
                             </div>
                         </div>
-                        <div class="form-group form-group--checkbox">
+                        <div class="form-group form-group--checkbox form-group--radio">
                             <div class="info">
                                 <p class="text-big">
                                     Доклад/Презентация
                                 </p>
                             </div>
-                            <div class="checkbox">
-                                <input class="checkbox-input js-checkboxInput" id="checkboxInput4" type="checkbox">
-                                <label class="checkbox-label js-checkboxLabel" for="checkboxInput4"></label>
+                            <div class="radio">
+                                <div class="radio-col">
+                                    <p class="text">Да</p>
+                                    <input type="radio" id="radio-1-5" name="radio-3-set" class="ui-radio" />
+                                    <label for="radio-1-5"></label>
+                                </div>
+                                <div class="radio-col">
+                                    <p class="text">Нет</p>
+                                    <input type="radio" id="radio-1-6" name="radio-3-set" class="ui-radio" />
+                                    <label for="radio-1-6"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-group--checkbox form-group--radio">
+                            <div class="info">
+                                <p class="text-big">
+                                    Нужен ли синхронный перевод?
+                                </p>
+                            </div>
+                            <div class="radio">
+                                <div class="radio-col">
+                                    <p class="text">Да</p>
+                                    <input type="radio" id="radio-1-7" name="radio-4-set" class="ui-radio" />
+                                    <label for="radio-1-7"></label>
+                                </div>
+                                <div class="radio-col">
+                                    <p class="text">Нет</p>
+                                    <input type="radio" id="radio-1-8" name="radio-4-set" class="ui-radio" />
+                                    <label for="radio-1-8"></label>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group" id="subjectSelect">
@@ -290,20 +330,6 @@
                         </div>
                         <div class="form-group js-otherOption" id="otherOption2">
                             <input class="input" type="text" placeholder="Ваш вариант">
-                        </div>
-                        <div class="form-group form-group--checkbox">
-                            <div class="info">
-                                <p class="text-big">
-                                    Нужен ли синхронный перевод?
-                                </p>
-                            </div>
-                            <div class="checkbox">
-                                <input class="checkbox-input js-checkboxInput" id="checkboxInput5" type="checkbox">
-                                <label class="checkbox-label js-checkboxLabel" for="checkboxInput5"></label>
-                                <div class="tooltip">
-                                    Оставьте поле пустым, если вам не нужен синхронный перевод
-                                </div>
-                            </div>
                         </div>
                         <h3 class="title">Откуда вы узнали о конгрессе</h3>
                         <div class="form-group">
@@ -330,7 +356,7 @@
                                 <input class="checkbox-input js-checkboxInput" id="checkboxInput6" type="checkbox">
                                 <label class="checkbox-label js-checkboxLabel" for="checkboxInput6"></label>
                                 <div class="tooltip">
-                                    Оставьте поле пустым, если вы не хоите получать самые интересные новости
+                                    Оставьте поле пустым, если вы не хотите получать самые интересные новости
                                 </div>
                             </div>
                         </div>
