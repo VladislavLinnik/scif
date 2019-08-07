@@ -16,10 +16,10 @@ function stickyHeader() {
 
 
 // registration form
-$('.js-firstStep').hide();
+// $('.js-firstStep').hide();
 $('.js-secondStep').hide();
 $('.js-thirdStep').hide();
-$('.js-fourStep').show();
+$('.js-fourStep').hide();
 $('.js-finalStep').hide();
 
 $('.js-registerCircle').eq(0).addClass('active');
