@@ -16,7 +16,6 @@
 
     <!-- STYLES -->
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- JQUERY -->
@@ -94,6 +93,7 @@
 </section>
 
 
+<<<<<<< HEAD
 
 <section class="about-event bgc-white">
     <div class="wrap about-event__wrap">
@@ -181,6 +181,9 @@
 
 <section class="topics bgc-grey">
     <h2 class="section-title">Темы мероприятия</h2>
+=======
+<section class="topics">
+>>>>>>> origin/master
     <div class="wrap topics__wrap">
         <div class="topics__img">
             <img src="./img/event-photo/2019/15.jpg" alt="">
@@ -242,6 +245,7 @@
 
 
 
+<<<<<<< HEAD
 <section class="speakers bgc-white">
     <h2 class="section-title">Участники</h2>
     <div class="wrap speakers__wrap">
@@ -262,17 +266,6 @@
                 <div class="item__info">
                     <h3 class="fullname">Myrtle Mendez</h3>
                     <p class="position">UI Designer</p>
-                        processes and up-dated technologies takes place from specialists coming from the entire world
-                    </p>
-                    <div class="details">
-                        <h4 class="fullname">Luca Pasco</h4>
-                        <p class="position">Региональный менеджер по продажам / Area Sales Manager <br>
-                            CASALE SA
-                        </p>
-                        <div class="slide__arrows">
-                            <button class="arrow-btn prev-btn">&larr;</button>
-                            <button class="arrow-btn next-btn">&rarr;</button>
-                        </div>
                 </div>
             </li>
             <li class="item">
@@ -345,6 +338,8 @@
 
 
 
+=======
+>>>>>>> origin/master
 <div class="subscribe-news">
     <div class="wrap subscribe-news__wrap">
         <div class="subscribe-news__text">Узнавайте о наших мероприятиях первым</div>
@@ -357,6 +352,7 @@
 
 
 
+<<<<<<< HEAD
 <section class="partners partners--about bgc-grey">
     <div class="wrap partners__wrap">
         <h2 class="partners__title section-title">Спонсоры и партнеры</h2>
@@ -584,6 +580,9 @@
 
 
 <section class="prev-events bgc-grey">
+=======
+<section class="prev-events">
+>>>>>>> origin/master
     <div class="wrap prev-events__wrap">
         <h2 class="prev-events__title section-title">Другие мероприятия</h2>
         <div class="grid">

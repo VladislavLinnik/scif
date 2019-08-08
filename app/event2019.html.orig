@@ -121,6 +121,7 @@
     <!--<p class="descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, fuga.</p>-->
 
     <div class="owl-carousel owl-carousel-photos">
+<<<<<<< HEAD
         <div class="slide"><img src="./img/event-photo/2019/1.jpg" alt=""></div>
         <div class="slide"><img src="./img/event-photo/2019/3.jpg" alt=""></div>
         <div class="slide"><img src="./img/event-photo/2019/4.jpg" alt=""></div>
@@ -141,6 +142,31 @@
         <div class="slide"><img src="./img/event-photo/2019/21.jpg" alt=""></div>
         <div class="slide"><img src="./img/event-photo/2019/22.jpg" alt=""></div>
         <div class="slide"><img src="./img/event-photo/2019/23.jpg" alt=""></div>
+=======
+        <div class="slide"><img src="./img/event-photo/2018/1.jpg" alt=""></div>
+        <!-- <div class="slide"><img src="./img/event-photo/2018/2.jpg" alt=""></div> -->
+        <div class="slide"><img src="./img/event-photo/2018/3.jpg" alt=""></div>
+        <div class="slide"><img src="./img/event-photo/2018/4.jpg" alt=""></div>
+        <div class="slide"><img src="./img/event-photo/2018/5.jpg" alt=""></div>
+        <div class="slide"><img src="./img/event-photo/2018/6.jpg" alt=""></div>
+        <div class="slide"><img src="./img/event-photo/2018/7.jpg" alt=""></div>
+        <div class="slide"><img src="./img/event-photo/2018/8.jpg" alt=""></div>
+        <div class="slide"><img src="./img/event-photo/2018/9.jpg" alt=""></div>
+        <div class="slide"><img src="./img/event-photo/2018/10.jpg" alt=""></div>
+        <div class="slide"><img src="./img/event-photo/2018/11.jpg" alt=""></div>
+        <div class="slide"><img src="./img/event-photo/2018/12.jpg" alt=""></div>
+        <div class="slide"><img src="./img/event-photo/2018/13.jpg" alt=""></div>
+        <div class="slide"><img src="./img/event-photo/2018/14.jpg" alt=""></div>
+        <div class="slide"><img src="./img/event-photo/2018/15.jpg" alt=""></div>
+        <div class="slide"><img src="./img/event-photo/2018/16.jpg" alt=""></div>
+        <div class="slide"><img src="./img/event-photo/2018/17.jpg" alt=""></div>
+        <div class="slide"><img src="./img/event-photo/2018/18.jpg" alt=""></div>
+        <div class="slide"><img src="./img/event-photo/2018/19.jpg" alt=""></div>
+        <div class="slide"><img src="./img/event-photo/2018/20.jpg" alt=""></div>
+        <div class="slide"><img src="./img/event-photo/2018/21.jpg" alt=""></div>
+        <div class="slide"><img src="./img/event-photo/2018/22.jpg" alt=""></div>
+        <div class="slide"><img src="./img/event-photo/2018/23.jpg" alt=""></div>
+>>>>>>> origin/master
     </div>
 </section>
 
