@@ -37,7 +37,7 @@ body {
     }
 
     h2 {
-        margin: 15px 0;
+        margin: 25px 0 15px;
         color: $dark;
         font-size: 26px;
     }
@@ -51,6 +51,21 @@ body {
 
     a {
         color: $azure;
+    }
+
+    ul {
+        list-style-type: disc;
+        list-style-position: inside;
+
+        li {
+            color: rgba($dark, .5);
+            font-size: 18px;
+            line-height: 1.4;
+
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
     }
 }
 
